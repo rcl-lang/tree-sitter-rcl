@@ -625,24 +625,33 @@
       "type": "SEQ",
       "members": [
         {
-          "type": "SYMBOL",
-          "name": "_expr_not_op"
-        },
-        {
           "type": "REPEAT1",
           "content": {
             "type": "SEQ",
             "members": [
               {
                 "type": "SYMBOL",
-                "name": "binop"
+                "name": "_expr_not_op"
               },
               {
                 "type": "SYMBOL",
-                "name": "_expr_not_op"
+                "name": "binop"
               }
             ]
           }
+        },
+        {
+          "type": "CHOICE",
+          "members": [
+            {
+              "type": "SYMBOL",
+              "name": "expr_unop"
+            },
+            {
+              "type": "SYMBOL",
+              "name": "_expr_not_op"
+            }
+          ]
         }
       ]
     },

@@ -65,6 +65,10 @@
           "named": true
         },
         {
+          "type": "expr_unop",
+          "named": true
+        },
+        {
           "type": "ident",
           "named": true
         },
